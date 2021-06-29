@@ -30,7 +30,8 @@
       var n1 = Number(window.prompt ('Digite o primeiro número: ')) //Number aceita números em geral
       var n2 = Number(window.prompt ('Digite o segundo número: '))
       var s = n1 + n2
-      window.alert ('O resultado é: ' + s +' !')
+      // window.alert ('O resultado é: ' + /* s.toString */ String(s) +' !') // Para converter novamente para string utiliza "s.toString" ou "String(s)"
+      window.alert (`A soma de ${n1} e ${n2} é igual a ${s}`) // ${} se chama Template String
     </script>   
 </body>
 </html>
