@@ -21,8 +21,16 @@
     <h1>Olá Mundo!</h1>   <!-- Comentário em HTML -->
     <p>Já me livrei da maldição.</p> 
     <script>
-      var nome = window.prompt('Qual seu nome?') // vai perguntar o nome...
-      alert ('E um grande prazer te conhecer, ' + nome) // Concatenação...
+
+      /* 
+      var n1 = Number.parseInt(window.prompt ('Digite o primeiro número: ')) // windows.prompt recebe um valor como string
+      var n2 = Number.parseInt(window.prompt ('Digite o segundo número: ')) // Number.parseInt ou Float converte o dado para inteiro ou float
+      */
+
+      var n1 = Number(window.prompt ('Digite o primeiro número: ')) //Number aceita números em geral
+      var n2 = Number(window.prompt ('Digite o segundo número: '))
+      var s = n1 + n2
+      window.alert ('O resultado é: ' + s +' !')
     </script>   
 </body>
 </html>
